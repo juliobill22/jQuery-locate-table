@@ -8,7 +8,6 @@ $(document).ready(function () {
 
     var v_imput =
             "<div id='divInput'>\n\
-                <p class='p-edition'>Quer copiar EDITION MEG?\n\
                 <input type='text' placeholder='Pesquisar...' />\n\
              </div>";
 
@@ -21,8 +20,8 @@ $(document).ready(function () {
                 '<td>' + i + ' Descrição</td>' +
                 '</tr>';
     }
-    $("p").html("<div>" +
-            v_imput +
+    $("p").html(v_imput +
+            "<div id='divTable'>" +
             "<table border=0>" +
             "<thead>" +
             "    <tr>" +
